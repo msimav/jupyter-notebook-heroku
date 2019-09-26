@@ -3,5 +3,6 @@
 set -ex
 
 ./bin/almond --install \
+        --force \
         --jupyter-path /app/.heroku/python/share/jupyter/kernels \
         --display-name "Scala (2.12)"
