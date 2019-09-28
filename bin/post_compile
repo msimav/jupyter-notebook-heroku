@@ -6,3 +6,7 @@ set -ex
         --force \
         --jupyter-path /app/.heroku/python/share/jupyter/kernels \
         --display-name "Scala (2.12)"
+
+
+rm -rf /app/.heroku/python/share/jupyter/kernels/gophernotes
+cp -rf go /app/.heroku/python/share/jupyter/kernels/gophernotes

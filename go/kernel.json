@@ -1,0 +1,9 @@
+{
+    "argv": [
+            "/app/.heroku/python/share/jupyter/kernels/gophernotes/gophernotes",
+            "{connection_file}"
+    ],
+    "display_name": "Go",
+    "language": "go",
+    "name": "go"
+}
