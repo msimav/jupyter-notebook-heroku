@@ -1,0 +1,31 @@
+{
+  "name": "Jupyter Notebook",
+  "description": "This app is a custom jupyter notebook with Python 3, Scala 2.12 and Go 1.13 kernels and stores notebooks on cloudcube.",
+  "repository": "https://github.com/msimav/jupyter-notebook-heroku",
+  "success_url": "/",
+  "env": {
+    "NOTEBOOK_PASSWORD": {
+      "description": "Hashed password for securing the notebook. Use prepare_password.py to generate one."
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    {
+      "plan": "cloudcube:free",
+      "as": "CLOUDCUBE"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/jvm"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
