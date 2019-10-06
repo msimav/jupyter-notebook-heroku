@@ -22,6 +22,7 @@ requests = "*"
 numpy = "*"
 pandas = "*"
 matplotlib = "*"
+jupyter-contrib-nbextensions = "*"
 
 [requires]
 python_version = "3.7"
