@@ -15,3 +15,8 @@ jupyter nbextension enable toc2/main --sys-prefix
 
 rm -rf /app/.heroku/python/share/jupyter/kernels/gophernotes
 cp -rf go /app/.heroku/python/share/jupyter/kernels/gophernotes
+
+cd /cling-install-prefix/share/cling/Jupyter/kernel
+
+pip install -e .
+jupyter-kernelspec install --user cling-cpp11
